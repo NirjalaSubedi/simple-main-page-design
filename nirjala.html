@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Classwork</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(135deg, #f06, #f9a);
+            margin: 0;
+            padding: 0;
+        }
+        h2 {
+            text-align: center;
+            color: white;
+            background: linear-gradient(135deg, #3498db, #8e44ad);
+            border-radius: 20px;
+            margin: 20px;
+            padding: 10px;
+            border: 2px solid black;
+            font-size: 2em;
+        }
+        .container {
+            justify-content: center;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .flower {
+            background-color: white;
+            border: 2px solid black;
+            border-radius: 20px;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            width: 300px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            animation: fadeIn 1s ease-in-out;
+        }
+        .flower:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+        }
+        img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 2px solid black;
+            margin-bottom: 10px;
+            transition: transform 0.3s;
+        }
+        img:hover {
+            transform: rotate(360deg);
+        }
+        p {
+            font-size: 16px;
+            color: #333;
+        }
+        ul {
+            text-align: left;
+            padding-left: 20px;
+        }
+        li {
+            margin: 5px 0;
+        }
+        .flower-category {
+            text-align: left;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>Types of Flowers</h2>
+    <div class="container">
+        <div class="flower">
+            <img src="rose.jpeg" alt="Rose">
+            <b>Rose</b>
+            <p>Roses are one of the most popular and beloved flowering plants in the world, known for their beauty, fragrance, and versatility.</p>
+            <div class="flower-category">
+                <p><b>Types of Roses:</b></p>
+                <ul>
+                    <li>China Rose</li>
+                    <li>Damask Rose</li>
+                    <li>Climbing Rose</li>
+                    <li>Floribunda Rose</li>
+                    <li>Hybrid Tea Rose</li>
+                </ul>
+            </div>
+        </div>
+        <div class="flower">
+            <img src="sunflower.jpg" alt="Sunflower">
+            <b>Sunflower</b>
+            <p>Sunflowers are iconic, bright yellow blooms known for their large, round faces and sturdy stalks. The very embodiment of summer. With their bright, yellow petals and tall green stems, sunflowers are used as a symbol of happiness.</p>
+            <div class="flower-category">
+                <p><b>Types of Sunflowers:</b></p>
+                <ul>
+                    <li>Common Sunflower</li>
+                    <li>Maximilian Sunflower</li>
+                    <li>Jerusalem Artichoke</li>
+                    <li>Silverleaf Sunflower</li>
+                    <li>Swamp Sunflower</li>
+                </ul>
+            </div>
+        </div>
+        <div class="flower">
+            <img src="l.jpeg" alt="Iris">
+            <b>Iris</b>
+            <p>Irises stand out with their unique shape and beautiful colours, which often include eye-catching patterns. The iris, native to Europe and Asia, has a fan-like shape with six lobes. Its stems are very long which are either solid or hollow.</p>
+            <div class="flower-category">
+                <p><b>Types of Irises:</b></p>
+                <ul>
+                    <li>Bearded Iris</li>
+                    <li>Siberian Iris</li>
+                    <li>Dutch Iris</li>
+                    <li>Japanese Iris</li>
+                    <li>Louisiana Iris</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
